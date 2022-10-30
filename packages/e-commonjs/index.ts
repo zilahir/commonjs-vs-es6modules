@@ -16,3 +16,5 @@ app.listen(port, () => {
 });
 
 app.use('/demo1', [demo1Routes])
+
+module.exports = app;

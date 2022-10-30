@@ -1,7 +1,5 @@
-'use strict';
-
-module.exports = eCommonjs;
-
-function eCommonjs() {
-    // TODO
+function logger(logMessage) {
+    console.log(`this is a log message: ${logMessage}`)
 }
+
+module.exports = logger;
