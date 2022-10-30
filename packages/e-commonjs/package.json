@@ -20,7 +20,7 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
-    "build": "npx tsc",
+    "build:tsc": "npx tsc",
     "clean:build": "rimraf ./dist",
     "build:webpack": "webpack"
   },

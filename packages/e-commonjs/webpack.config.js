@@ -7,9 +7,10 @@ const {
 } = process.env;
 
 module.exports = {
-    optimization: {
-        minimize: false
-    },
+  optimization: {
+      minimize: false
+  },
+  target: ["es5"],
   entry: './index.ts',
   mode: NODE_ENV,
   target: 'node',
