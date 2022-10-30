@@ -2,7 +2,7 @@
   "name": "e-commonjs",
   "version": "0.0.0",
   "description": "> TODO: description",
-  "author": "Richard Zilahi <richard.zilahi@varjo.com>",
+  "author": "Richard Zilahi <zilahi@gmail.com>",
   "homepage": "https://github.com/zilahir/commonjs-vs-es6modules#readme",
   "license": "ISC",
   "main": "lib/e-commonjs.js",
@@ -18,17 +18,23 @@
     "url": "git+https://github.com/zilahir/commonjs-vs-es6modules.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "build": "npx tsc"
   },
   "bugs": {
     "url": "https://github.com/zilahir/commonjs-vs-es6modules/issues"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.14",
     "@types/node": "^18.11.7",
+    "concurrently": "^7.5.0",
+    "nodemon": "^2.0.20",
     "typescript": "^4.8.4"
-  }
+  },
+  "type": "commonjs"
 }
